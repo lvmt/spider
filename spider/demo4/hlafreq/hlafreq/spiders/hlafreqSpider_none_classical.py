@@ -10,18 +10,19 @@ import re
 ## 将数据储存到mongo数据库中
 client = pymongo.MongoClient('127.0.0.1', 27017)
 db = client['hlafreq']
-collections = db['freq1']
+collections = db['non-classical']
 
 class HlaFreq(scrapy.Spider):
     
     name = "hlafreq"
     # allowed_domains = ["http://www.allelefrequencies.net"]
-    start_urls = ["http://www.allelefrequencies.net/hla6006a.asp?page=1&hla_locus=&hla_locus_type=Classical&hla_allele1=&hla_allele2=&hla_selection=&hla_pop_selection=&hla_population=&hla_country=&hla_dataset=&hla_region=&hla_ethnic=&hla_study=Controls%20for%20Disease%20Study&hla_sample_size=&hla_sample_size_pattern=equal&hla_sample_year=&hla_sample_year_pattern=equal&hla_level=&hla_level_pattern=equal&hla_show=&hla_order=order_1&standard=a"]
+    start_urls = ["http://www.allelefrequencies.net/hla6006a.asp?page=1&hla_locus=&hla_locus_type=Non-classical&hla_allele1=&hla_allele2=&hla_selection=&hla_pop_selection=&hla_population=&hla_country=&hla_dataset=&hla_region=&hla_ethnic=&hla_study=Controls%20for%20Disease%20Study&hla_sample_size=&hla_sample_size_pattern=equal&hla_sample_year=&hla_sample_year_pattern=equal&hla_level=&hla_level_pattern=equal&hla_show=&hla_order=order_1&standard=a"]
    
-    for page in range(2, 71):
-        new_url = "http://www.allelefrequencies.net/hla6006a.asp?page={page}&hla_locus=&hla_locus_type=Classical&hla_allele1=&hla_allele2=&hla_selection=&hla_pop_selection=&hla_population=&hla_country=&hla_dataset=&hla_region=&hla_ethnic=&hla_study=Controls%20for%20Disease%20Study&hla_sample_size=&hla_sample_size_pattern=equal&hla_sample_year=&hla_sample_year_pattern=equal&hla_level=&hla_level_pattern=equal&hla_show=&hla_order=order_1&standard=a".format(**locals())
+    for page in range(2,3):
+        new_url = "http://www.allelefrequencies.net/hla6006a.asp?page={page}&hla_locus=&hla_locus_type=Non-classical&hla_allele1=&hla_allele2=&hla_selection=&hla_pop_selection=&hla_population=&hla_country=&hla_dataset=&hla_region=&hla_ethnic=&hla_study=Controls%20for%20Disease%20Study&hla_sample_size=&hla_sample_size_pattern=equal&hla_sample_year=&hla_sample_year_pattern=equal&hla_level=&hla_level_pattern=equal&hla_show=&hla_order=order_1&standard=a".format(**locals())
         start_urls.append(new_url)
    
+    
     def parse(self, response):
         
         item = HlafreqItem()
