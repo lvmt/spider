@@ -11,20 +11,9 @@ import requests
 from bs4 import BeautifulSoup
 
 
-url = "http://hgmdtrial.biobase-international.com/hgmd/pro/all.php/"
-
-BASE_URL = 'http://hgmdtrial.biobase-international.com/hgmd/pro'
-
-query_dict ={
-    "gene": "DMD",
-    "sort": "location",
-    "database": "Get+all+mutations"
-}
-
 headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
         } 
-
 
 def get_soup(url, method="GET", **kwargs):
     
@@ -75,32 +64,3 @@ if __name__ == "__main__":
     
     print(mutation)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# response = requests.get(url, data=query_dict, headers=headers)
-
-# print(response.status_code)
-
-
-# html = response.content
-
-# soup = BeautifulSoup(html, 'lxml')
-
-# info = soup.find('table')
-# print(soup)
