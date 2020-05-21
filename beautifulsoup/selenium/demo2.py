@@ -17,4 +17,4 @@ url = "https://www.qiushibaike.com/text/"
 
 driver.get(url)
 content = driver.find_element_by_css_selector("div.content")
-print(content.text)
+print(content.text) 
