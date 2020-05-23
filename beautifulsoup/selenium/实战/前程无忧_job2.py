@@ -92,7 +92,7 @@ if __name__ == "__main__":
     # 登陆
     driver = webdriver.Firefox()
     driver.get("https://login.51job.com/login.php?lang=c") 
-    driver.implicitly_wait(20)   # 设置隐式等待， 这样无需到处充满着time.sleep
+    driver.implicitly_wait(100)   # 设置隐式等待， 这样无需到处充满着time.sleep
 
     driver.find_element_by_id("loginname").send_keys(user)
     driver.find_element_by_id("password").send_keys(passwd)
