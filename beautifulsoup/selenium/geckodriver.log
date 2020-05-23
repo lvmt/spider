@@ -296,3 +296,454 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1590194779731	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lmt\\AppData\\Local\\Temp\\rust_mozprofiler7Nuy9"
+1590194780514	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590194780811	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590194780811	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590194780811	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590194780811	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590194783240	Marionette	INFO	Listening on port 50545
+1590194783466	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590194841447	Marionette	INFO	Stopped listening on port 50545
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590194866283	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lmt\\AppData\\Local\\Temp\\rust_mozprofileP8mw17"
+1590194866679	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590194866982	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590194866982	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590194866982	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590194866982	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590194869584	Marionette	INFO	Listening on port 50829
+1590194869939	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590194886501	Marionette	INFO	Stopped listening on port 50829
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590195024199	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lmt\\AppData\\Local\\Temp\\rust_mozprofile5T9sUX"
+1590195024593	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590195024906	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590195024906	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590195024906	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590195024906	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590195027329	Marionette	INFO	Listening on port 51263
+1590195027362	Marionette	WARN	TLS certificate errors will be ignored for this session
+1590195046682	Marionette	INFO	Stopped listening on port 51263
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590198321749	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lmt\\AppData\\Local\\Temp\\rust_mozprofileDtCBmw"
+1590198322154	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590198322456	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590198322456	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590198322456	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590198322456	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590198324806	Marionette	INFO	Listening on port 53343
+1590198324915	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1590199087586	Marionette	INFO	Stopped listening on port 53343
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+eading manifest: Invalid extension permission: mozillaAddons
+1590198417169	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590198417169	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590198417169	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590198420082	Marionette	INFO	Listening on port 53632
+1590198420114	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+1590199088399	Marionette	INFO	Stopped listening on port 53632
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+54002	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590198754002	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590198754002	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590198754002	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590198756374	Marionette	INFO	Listening on port 54134
+1590198756832	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+1590199089716	Marionette	INFO	Stopped listening on port 54134
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590199152074	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lmt\\AppData\\Local\\Temp\\rust_mozprofileRbAOfa"
+1590199152544	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590199152871	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590199152871	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590199152872	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590199152872	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590199156316	Marionette	INFO	Listening on port 55026
+1590199156350	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+[Child 2940, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+[Child 2940, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+1590199997791	Marionette	INFO	Stopped listening on port 55026
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ssion: telemetry
+1590199472960	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590199472960	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590199476294	Marionette	INFO	Listening on port 55809
+1590199476327	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+1590199999103	Marionette	INFO	Stopped listening on port 55809
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+07055	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590199607055	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590199607055	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590199607055	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590199609671	Marionette	INFO	Listening on port 55958
+1590199609994	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+[Child 15456, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+1590201318942	Marionette	INFO	Stopped listening on port 55958
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+dons
+1590199676239	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590199676239	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590199676240	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590199679528	Marionette	INFO	Listening on port 56147
+1590199679655	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+1590200000265	Marionette	INFO	Stopped listening on port 56147
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+74929	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590199774929	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590199774929	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590199774929	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590199778467	Marionette	INFO	Listening on port 56416
+1590199778954	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+1590200000874	Marionette	INFO	Stopped listening on port 56416
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+on 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590199858875	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590199858875	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590199858876	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590199858876	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590199862703	Marionette	INFO	Listening on port 56577
+1590199863144	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+[Child 21136, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+1590200001492	Marionette	INFO	Stopped listening on port 56577
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1590200066221	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lmt\\AppData\\Local\\Temp\\rust_mozprofilejY893p"
+1590200066631	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590200066928	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590200066928	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590200066928	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590200066928	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590200069332	Marionette	INFO	Listening on port 57003
+1590200069388	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+1590201319661	Marionette	INFO	Stopped listening on port 57003
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+13366	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590200113366	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590200113366	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590200113366	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590200116033	Marionette	INFO	Listening on port 57125
+1590200116321	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+[Child 19600, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+[Child 19600, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+[Child 19600, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+[Child 19600, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+1590201320741	Marionette	INFO	Stopped listening on port 57125
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+st: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590200356842	Marionette	INFO	Listening on port 57491
+1590200356871	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+[Child 21908, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+[Child 21908, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+1590201321457	Marionette	INFO	Stopped listening on port 57491
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+lla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590200427530	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590200427530	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590200431292	Marionette	INFO	Listening on port 57666
+1590200431530	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+[Child 18320, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+1590201322380	Marionette	INFO	Stopped listening on port 57666
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+dons
+1590200518761	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590200518761	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590200518761	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590200522176	Marionette	INFO	Listening on port 57906
+1590200522529	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+1590201323601	Marionette	INFO	Stopped listening on port 57906
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+82023	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590200682023	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590200682023	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590200682023	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590200684897	Marionette	INFO	Listening on port 58282
+1590200684914	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+[Child 20280, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+1590201324737	Marionette	INFO	Stopped listening on port 58282
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+dons
+1590200727019	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590200727019	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590200727019	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590200729680	Marionette	INFO	Listening on port 58389
+1590200729870	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+1590201326413	Marionette	INFO	Stopped listening on port 58389
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+74660	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590200874660	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590200874661	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590200874661	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590200878283	Marionette	INFO	Listening on port 58708
+1590200878616	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+1590201327725	Marionette	INFO	Stopped listening on port 58708
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+02849	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590201302849	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590201302849	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590201302849	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590201306513	Marionette	INFO	Listening on port 59551
+1590201306711	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1590201479963	Marionette	INFO	Stopped listening on port 59551
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+eading manifest: Invalid extension permission: mozillaAddons
+1590201353038	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590201353038	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590201353038	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590201355643	Marionette	INFO	Listening on port 59693
+1590201355858	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+1590201478862	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lmt\\AppData\\Local\\Temp\\rust_mozprofileChMch7"
+1590201479307	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1590201479624	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590201479625	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590201479625	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590201479625	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590201482220	Marionette	INFO	Listening on port 59971
+1590201482535	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+1590201715045	Marionette	INFO	Stopped listening on port 59971
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+13168	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590201613168	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590201613169	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590201613169	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590201615672	Marionette	INFO	Listening on port 60202
+1590201616085	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+[Child 7380, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+[Child 7380, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+1590201716789	Marionette	INFO	Stopped listening on port 60202
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ssion: telemetry
+1590201715160	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590201715160	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590201717743	Marionette	INFO	Listening on port 60426
+1590201717902	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+[Child 23416, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+[Child 23416, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkou1590201844190	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590201844190	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590201844190	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590201844190	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1590201846708	Marionette	INFO	Listening on port 60674
+1590201846930	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript warning: http://qiushidabaike.com/Public/index/xxhh/js/user.js, line 30: unreachable code after return statement
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+[Child 12912, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+[Child 12912, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1590201909304	Marionette	INFO	Stopped listening on port 60674
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
