@@ -56,7 +56,7 @@ class Pubmed(object):
 
         response = self.get_response(self.url,data)
         self.queryurl = response.url   #得到查询url 
-        print('aa',self.queryurl)
+        print('查询url：',self.queryurl)
         soup = self.get_soup(response)
         results = soup.select('.results-amount .value')[0].string
         results = int("".join(results.split(',')))
@@ -93,21 +93,28 @@ class Pubmed(object):
             title = soup.select('main.article-details h1')[0].text.strip()
         except:
             title = 'None'
-        pmid = pmid
+        
         try:
-            abstract = [item.text.strip().replace('\n', ' ').replace('  ', '') for item in soup.select('div.abstract p')]
-            
-            for item in abstract:
-                print('\033[1;32m文献爬取结果:\033[0m')
-                #print(item)
-                items = item.split('.')
-                for a in items:
-                    a = "{a}".format(**locals())
-                    print(a)
-                    print(translate.Translate(a).translate_result())
-            # c_abstract = [translate.Translate(item).translate_result() for item in abstract]
+            abstract = ''.join([item.text.strip().replace('\n', ' ').replace('  ', '') for item in soup.select('div.abstract p')])
         except:
             abstract = 'None'
+            
+        return '{title}\t{pmid}\t{abstract}'.format(**locals())
+            
+        # try:
+        #     abstract = [item.text.strip().replace('\n', ' ').replace('  ', '') for item in soup.select('div.abstract p')]
+            
+        #     for item in abstract:
+        #         print('\033[1;32m文献爬取结果:\033[0m')
+        #         #print(item)
+        #         items = item.split('.')
+        #         for a in items:
+        #             a = "{a}".format(**locals())
+        #             print(a)
+        #             print(translate.Translate(a).translate_result())
+        #     # c_abstract = [translate.Translate(item).translate_result() for item in abstract]
+        # except:
+        #     abstract = 'None'
         #keywds = soup.select('div.abstract p')[1].text.strip().split('\n')[-1]
 
         #print('\033[1;32m文献爬取结果:\033[0m')
@@ -120,11 +127,15 @@ class Pubmed(object):
 
 
     def start(self):
+        
+        out = open('result.xls', 'w')
+        
         total_page = self.get_total_pages()
         pmids_lists = self.get_pmids(self.pages,total_page)
         for idx,pmid in enumerate(pmids_lists):
-            print('\033[1;35m爬取第{idx}篇文献.....\033[0m'.format(**locals()))
-            self.get_content(pmid)
+            print('\033[1;35m爬取第{idx}篇文献.....\033[0m'.format(idx=idx+1))
+            content = self.get_content(pmid)
+            out.write(content+'\n')
             time.sleep(3)
 
 
@@ -135,7 +146,7 @@ if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser(description='爬取pubmed文献')
     parser.add_argument('--url', help='pubmed的url链接', default='https://pubmed.ncbi.nlm.nih.gov')
-    parser.add_argument('--keywords', help='查询关键字')
+    parser.add_argument('keywords', help='查询关键字')
     parser.add_argument('--pages', type=int, help='爬取页数', default=2)
 
     args = vars(parser.parse_args())
@@ -143,4 +154,5 @@ if __name__ == '__main__':
     pp = Pubmed(args)
     pp.start()
 
-
+    # http://api.fanyi.baidu.com/api/trans/product/apidoc#joinFile 
+    # 利用百度api进行翻译
