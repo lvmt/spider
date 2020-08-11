@@ -21,112 +21,115 @@ class Pubmed(object):
     def __init__(self,args):
         self.args = args
         self.url = args['url']
-        self.query = args['query']
+        self.keywords = args['keywords']
+        self.pages = args['pages']
         
         self.queryurl = ''
 
 
     def get_response(self,url,data=None):
-        '''get response
-        '''
-        N = 1 # 最多允许重复测试10次
         try:
             response = requests.get(url,params=data,headers=headers)
             if response.status_code == 200:
-                print('\033[1;32m响应码：200\033[0m')
-                self.queryurl = response.url
-                return response.text
+                return response
             else:
                 print(response.status_code)
+                #exit('\033[1;34m被封啦\033[0m')
         except Exception as e:
-            if N < 10:
-                print('\033[1;32m响应错误:{}'.format(e))
-                print('\033[1;33m休息3秒,try again 第{}次\033[0m'.format(N))
-                time.sleep(3)
-                self.get_response(url)
-                N += 1
+            self.get_response(url)
+
 
     def get_soup(self,response):
-        '''get beautifulsoup
-        '''
         try:
-            soup = BeautifulSoup(response,'html.parser')
+            soup = BeautifulSoup(response.text,'html.parser')
         except:
-            soup = BeautifulSoup(response, 'xml')
+            soup = BeautifulSoup(response.text,'xml')
         return soup
 
-    def parser_html(self,soup,pages=10):
-        '''解析文档，使用css_select方法
-        结果也每次展示10条信息,其他也面显示信息为查询url + &page=2
-        默认爬取10页内容,少于10页信息，则全部爬取
+
+    def get_total_pages(self):
+        '''得到查询结果的页数
         '''
-        # get total items
-        item_number = soup.select('.results-amount .value')[0].string
-        item_number = int("".join(item_number.split(',')))
-
-        # get total page
-        total_page = int(item_number)/10 + 1
-
-        if total_page < 10:
-            pages = total_page            
-
-        for page in range(pages):
-            url = self.queryurl + '&page={}'.format(page)  # https://pubmed.ncbi.nlm.nih.gov/?term=WES&page=1
-            response = self.get_response(url)
-            soup = self.get_soup(response)
-
-            results_list = soup.select('.search-results-list .full-docsum')
-            for result in results_list:
-                #title = result.select('.docsum-title')[0].text.strip()
-                href = self.url.rstrip('?')+result.select('.docsum-title')[0]['href'] # 文献的完整链接
-                # https://pubmed.ncbi.nlm.nih.gov/26742503/
-                response = self.get_response(href)
-                soup = self.get_soup(response)
-                
-                title = soup.select('div#full-view-heading>.heading-title')[0].text.strip()
-                pmid = soup.select('div#full-view-heading .current-id')[0].text.strip()
-                pmcid = soup.select('div#full-view-heading [class="identifier pmc"] .id-link')[0].text.strip()
-
-
-
-
-
-
-
-
-        pass
-
-    def start(self):
-
         data = {
-            'term':self.query
+            'term': self.keywords
         }
 
-        # 查询页soup
-        response = self.get_response(url,data)
+        response = self.get_response(self.url,data)
+        self.queryurl = response.url   #得到查询url 
+        print('aa',self.queryurl)
+        soup = self.get_soup(response)
+        results = soup.select('.results-amount .value')[0].string
+        results = int("".join(results.split(',')))
+        total_page = int(results)/10 + 1
+
+        return total_page
+
+
+    def get_pmids(self,pages,total_page):
+        '''得到需要页数的标题链接
+        '''
+        pmids_lists = []
+        pages = total_page if total_page < pages else pages
+
+        for page in range(1,pages+1):
+            url = '{self.queryurl}/&page={page}'.format(**locals()) # 查询结果的每一个url
+            response = self.get_response(url)
+            soup = self.get_soup(response)
+            pmids = soup.select('div.search-results-chunk')[0]['data-chunk-ids']
+            pmids = pmids.split(',')
+            pmids_lists.extend(pmids)
+
+        return pmids_lists
+
+
+    def get_content(self,pmid):
+        '''得到每个标题链接的内容
+        '''
+        id_url = '{self.url}/{pmid}/'.format(**locals())
+        response = self.get_response(id_url)
         soup = self.get_soup(response)
 
-        self.parser_html(soup)
+        try:
+            title = soup.select('main.article-details h1')[0].text.strip()
+        except:
+            title = 'None'
+        pmid = pmid
+        try:
+            abstract = '\t'.join([item.text.strip().replace('\n', '') for item in soup.select('div.abstract p')])
+        except:
+            abstract = 'None'
+        #keywds = soup.select('div.abstract p')[1].text.strip().split('\n')[-1]
+
+        print('\033[1;32m文献爬取结果:\033[0m')
+
+        print(id_url)
+        print(pmid)
+        print(title)
+        print(abstract)
+
+
+    def start(self):
+        total_page = self.get_total_pages()
+        pmids_lists = self.get_pmids(self.pages,total_page)
+        for idx,pmid in enumerate(pmids_lists):
+            print('\033[1;35m爬取第{idx}篇文献.....\033[0m'.format(**locals()))
+            self.get_content(pmid)
+            time.sleep(3)
 
 
 
 
+if __name__ == '__main__':
 
+    import argparse
+    parser = argparse.ArgumentParser(description='爬取pubmed文献')
+    parser.add_argument('--url', help='pubmed的url链接', default='https://pubmed.ncbi.nlm.nih.gov')
+    parser.add_argument('--keywords', help='查询关键字')
+    parser.add_argument('--pages', type=int, help='爬取页数', default=2)
 
-data = {
-    'term': 'WES'
-}
+    args = vars(parser.parse_args())
 
-url = 'https://pubmed.ncbi.nlm.nih.gov/?'
+    pp = Pubmed(args)
+    pp.start()
 
-
-response = requests.get(url, params=data, headers=headers)
-
-if response.status_code == 200:
-    response.encoding = "utf-8"
-    # with open('demo.html', 'w') as fw:
-    #     fw.write(str(response.content))
-    print(response.url)
-else:
-    print('\033[1;32m爬取失败\033[0m')
 
