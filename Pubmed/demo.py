@@ -5,10 +5,10 @@
 '''提取pubmed上面的文献参考
 '''
 
+import time
 import requests
 from bs4 import BeautifulSoup
-
-import time
+import translate
 
 
 headers = {
@@ -95,17 +95,28 @@ class Pubmed(object):
             title = 'None'
         pmid = pmid
         try:
-            abstract = '\t'.join([item.text.strip().replace('\n', '') for item in soup.select('div.abstract p')])
+            abstract = [item.text.strip().replace('\n', ' ').replace('  ', '') for item in soup.select('div.abstract p')]
+            
+            for item in abstract:
+                print('\033[1;32m文献爬取结果:\033[0m')
+                #print(item)
+                items = item.split('.')
+                for a in items:
+                    a = "{a}".format(**locals())
+                    print(a)
+                    print(translate.Translate(a).translate_result())
+            # c_abstract = [translate.Translate(item).translate_result() for item in abstract]
         except:
             abstract = 'None'
         #keywds = soup.select('div.abstract p')[1].text.strip().split('\n')[-1]
 
-        print('\033[1;32m文献爬取结果:\033[0m')
+        #print('\033[1;32m文献爬取结果:\033[0m')
 
-        print(id_url)
-        print(pmid)
-        print(title)
-        print(abstract)
+        # print(id_url)
+        # print(pmid)
+        # print(title)
+        # print(abstract)
+        # #print(c_abstract)
 
 
     def start(self):

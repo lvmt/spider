@@ -29,6 +29,27 @@ class Translate(object):
             "action": "FY_BY_CLICKBUTTON",
             "typoResult": "true"
         }
+        try:
+            response = requests.post(url,data=key)
+            if response.status_code == 200:
+                result = json.loads(response.text)
+                source_word = result['translateResult'][0][0]['src']
+                translate_word = result['translateResult'][0][0]['tgt']
+                # return [source_word, translate_word]
+                return translate_word
+            else:
+                print('有道词典调用失败')
+                return None
+        except Exception as e:
+            self.translate_result()
 
 
-        pass
+if __name__ == '__main__':
+    
+    import sys
+    word = sys.argv[1]
+
+    tt = Translate(word)
+    print(tt.translate_result())
+
+    
