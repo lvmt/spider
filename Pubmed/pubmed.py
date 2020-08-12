@@ -8,7 +8,7 @@
 import time
 import requests
 from bs4 import BeautifulSoup
-import translate
+from googletrans import Translator
 
 
 headers = {
@@ -33,9 +33,13 @@ class Pubmed(object):
             if response.status_code == 200:
                 return response
             else:
-                print(response.status_code)
+                print('\033[1;32m爬虫失效了，code编码: {}\033[0m'.format(response.status_code))
                 #exit('\033[1;34m被封啦\033[0m')
+                time.sleep(3)
+                self.get_response(url)
         except Exception as e:
+            print('\033[1;32m错误信息:{}\033[0m'.format(e))
+            time.sleep(3)
             self.get_response(url)
 
 
@@ -43,7 +47,7 @@ class Pubmed(object):
         try:
             soup = BeautifulSoup(response.text,'html.parser')
         except:
-            soup = BeautifulSoup(response.text,'xml')
+            soup = BeautifulSoup(response.text,'html.parser')
         return soup
 
 
@@ -78,6 +82,7 @@ class Pubmed(object):
             pmids = soup.select('div.search-results-chunk')[0]['data-chunk-ids']
             pmids = pmids.split(',')
             pmids_lists.extend(pmids)
+            time.sleep(3)
 
         return pmids_lists
 
@@ -98,45 +103,33 @@ class Pubmed(object):
             abstract = ''.join([item.text.strip().replace('\n', ' ').replace('  ', '') for item in soup.select('div.abstract p')])
         except:
             abstract = 'None'
-            
-        return '{title}\t{pmid}\t{abstract}'.format(**locals())
-            
-        # try:
-        #     abstract = [item.text.strip().replace('\n', ' ').replace('  ', '') for item in soup.select('div.abstract p')]
-            
-        #     for item in abstract:
-        #         print('\033[1;32m文献爬取结果:\033[0m')
-        #         #print(item)
-        #         items = item.split('.')
-        #         for a in items:
-        #             a = "{a}".format(**locals())
-        #             print(a)
-        #             print(translate.Translate(a).translate_result())
-        #     # c_abstract = [translate.Translate(item).translate_result() for item in abstract]
-        # except:
-        #     abstract = 'None'
-        #keywds = soup.select('div.abstract p')[1].text.strip().split('\n')[-1]
 
-        #print('\033[1;32m文献爬取结果:\033[0m')
+        c_abstract = self.translate_fun(abstract)
+            
+        return '{pmid}\t{title}\t{abstract}\t{c_abstract}'.format(**locals())
+            
 
-        # print(id_url)
-        # print(pmid)
-        # print(title)
-        # print(abstract)
-        # #print(c_abstract)
+    def translate_fun(self,word,src='en',dest='zh-cn'):
+        '''翻译,默认英文翻译为中文
+        '''
+        translator = Translator(service_urls=['translate.google.cn'])
+        result = translator.translate(word,src=src,dest=dest)
+        #print(result.text)
+        return result.text
 
 
     def start(self):
         
-        out = open('result.xls', 'w')
-        
+        out = open('{}.xls'.format('_'.join(self.keywords.split(' '))), 'w')
+        out.write('pmid\ttitle\tabstract\tchinese_abstract\n')
+
         total_page = self.get_total_pages()
         pmids_lists = self.get_pmids(self.pages,total_page)
         for idx,pmid in enumerate(pmids_lists):
             print('\033[1;35m爬取第{idx}篇文献.....\033[0m'.format(idx=idx+1))
             content = self.get_content(pmid)
             out.write(content+'\n')
-            time.sleep(3)
+            time.sleep(5)
 
 
 
@@ -154,5 +147,7 @@ if __name__ == '__main__':
     pp = Pubmed(args)
     pp.start()
 
+    #pp.translate_fun('hello')
+    #pp.translate_fun('你好')
     # http://api.fanyi.baidu.com/api/trans/product/apidoc#joinFile 
     # 利用百度api进行翻译
