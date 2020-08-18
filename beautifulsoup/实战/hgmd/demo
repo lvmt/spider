@@ -1,0 +1,9 @@
+
+data1 = {
+'gene': 'MSH2',
+'inclsnp': 'N',
+'base': 'Z',
+'refcore': 'NM_000251',
+'sort': 'location',
+'database': 'Get all mutations'
+}
