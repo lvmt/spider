@@ -1,0 +1,31 @@
+<mxfile host="573d8826-25b6-4b6b-a617-2422a71efefc" modified="2020-08-13T13:51:08.390Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.47.3 Chrome/78.0.3904.130 Electron/7.3.2 Safari/537.36" etag="35Bd0gvxd8OxBg-WI3um" version="13.1.3">
+    <diagram id="6hGFLwfOUW9BJ-s0fimq" name="Page-1">
+        <mxGraphModel dx="736" dy="432" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="调研高度近视遗传背景" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="10" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="父母双方都是近视：&lt;br&gt;后代患近视的概率约90%" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="79" y="132" width="172" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="父母一方为高度近视：&lt;br&gt;后代患近视的概率约为50%" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="471" y="129" width="162" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="从遗传角度" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="324" y="76" width="76" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;fillColor=none;rotation=90;" vertex="1" parent="1">
+                    <mxGeometry x="352" y="-20" width="20" height="266" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;fillColor=none;rotation=-90;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="83" width="20" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="1.不同家系间遗传模式可能不一样&lt;br&gt;2.高度近视属于多基因病&lt;br&gt;3.高度近视属于高发病" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=none;dashed=1;strokeColor=none;strokeWidth=1;" vertex="1" parent="1">
+                    <mxGeometry x="276" y="196" width="200" height="97" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

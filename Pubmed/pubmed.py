@@ -9,11 +9,8 @@ import time
 import requests
 from bs4 import BeautifulSoup
 from googletrans import Translator
-
-
-headers = {
-    'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:77.0) Gecko/20100101 Firefox/77.0'
-}
+import random
+from user_agent import user_agent_list
 
 
 class Pubmed(object):
@@ -29,8 +26,11 @@ class Pubmed(object):
 
     def get_response(self,url,data=None):
         try:
+            headers = {'User-Agent': random.choice(user_agent_list)}
+            print('hhhhhhhh', headers)
             response = requests.get(url,params=data,headers=headers)
             if response.status_code == 200:
+                response.encoding = response.apparent_encoding
                 return response
             else:
                 print('\033[1;32m爬虫失效了，code编码: {}\033[0m'.format(response.status_code))
@@ -120,7 +120,7 @@ class Pubmed(object):
 
     def start(self):
         
-        out = open('{}.xls'.format('_'.join(self.keywords.split(' '))), 'w')
+        out = open('{}.txt'.format('_'.join(self.keywords.split(' '))), 'w', encoding='utf-8')
         out.write('pmid\ttitle\tabstract\tchinese_abstract\n')
 
         total_page = self.get_total_pages()
@@ -128,7 +128,7 @@ class Pubmed(object):
         for idx,pmid in enumerate(pmids_lists):
             print('\033[1;35m爬取第{idx}篇文献.....\033[0m'.format(idx=idx+1))
             content = self.get_content(pmid)
-            out.write(content+'\n')
+            out.write(content+'\n'+'\n')
             time.sleep(5)
 
 
@@ -146,7 +146,6 @@ if __name__ == '__main__':
 
     pp = Pubmed(args)
     pp.start()
-
     #pp.translate_fun('hello')
     #pp.translate_fun('你好')
     # http://api.fanyi.baidu.com/api/trans/product/apidoc#joinFile 
